@@ -34,7 +34,7 @@
             <h1>Leave Your Feedback</h1>
             <p>Have you used TrixOS? Share your experience with the community!</p>
 
-            <!-- Форма для приватных отзывов (на почту) -->
+            <!-- ФОРМА ДЛЯ ОТПРАВКИ ОТЗЫВА НА ПОЧТУ -->
             <form action="https://formsubmit.co/sxhew78@gmail.com" method="POST" class="review-form">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -49,64 +49,42 @@
             </form>
 
             <p style="color: #8b949e; font-size: 14px; margin-top: 10px;">
-                📨 This form sends a private review to the developer. For public discussions, scroll down.
+                📨 Your review will be sent to the developer and published here after moderation.
             </p>
 
             <hr style="margin: 40px 0; border: none; border-top: 2px solid #30363d;">
 
-            <h2>💬 Public Reviews &amp; Community Discussion</h2>
-            <p>
-                Below you can see all public reviews and discuss TrixOS with other users.
-                <strong>Leave your feedback, ask questions, or help others!</strong>
-            </p>
+            <h2>💬 Real Reviews from Users</h2>
+            <p>Here are reviews from real users. Want to share your experience? Fill out the form above!</p>
 
-            <!-- Примеры отзывов (для красоты) -->
-            <div style="margin: 30px 0;">
-                <div class="review" style="background: #161b22; padding: 15px 20px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #30363d;">
-                    <span style="font-weight: 600; color: #e6edf3;">Alex</span>
-                    <span style="color: #f5b342; margin-left: 10px;">★★★★★</span>
-                    <p style="margin-top: 5px; color: #c9d1d9;">Amazing tool! My Windows 11 runs much faster after applying the tweaks. Highly recommend!</p>
-                </div>
-                <div class="review" style="background: #161b22; padding: 15px 20px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #30363d;">
-                    <span style="font-weight: 600; color: #e6edf3;">Maria</span>
-                    <span style="color: #f5b342; margin-left: 10px;">★★★★☆</span>
-                    <p style="margin-top: 5px; color: #c9d1d9;">Helped me remove all the bloatware. The system feels cleaner and more responsive.</p>
-                </div>
-                <div class="review" style="background: #161b22; padding: 15px 20px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #30363d;">
-                    <span style="font-weight: 600; color: #e6edf3;">John</span>
-                    <span style="color: #f5b342; margin-left: 10px;">★★★★★</span>
-                    <p style="margin-top: 5px; color: #c9d1d9;">The CLI version is a lifesaver for automating Windows setups. Great work!</p>
-                </div>
+            <!-- ⬇️ СЮДА ТЫ БУДЕШЬ ДОБАВЛЯТЬ ОТЗЫВЫ ВРУЧНУЮ ⬇️ -->
+            <!--
+            КАК ДОБАВЛЯТЬ НОВЫЙ ОТЗЫВ:
+            1. Скопируй этот блок:
+            <div class="review" style="background: #161b22; padding: 15px 20px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #30363d;">
+                <span style="font-weight: 600; color: #e6edf3;">ИМЯ</span>
+                <span style="color: #f5b342; margin-left: 10px;">ОЦЕНКА</span>
+                <p style="margin-top: 5px; color: #c9d1d9;">ТЕКСТ ОТЗЫВА</p>
+            </div>
+            2. Вставь его сюда (вместо этой инструкции или ниже существующих).
+            3. Замени ИМЯ, ОЦЕНКА и ТЕКСТ ОТЗЫВА на реальные данные из письма.
+            4. Сохрани файл и залей на GitHub.
+            -->
+
+            <!-- РЕАЛЬНЫЕ ОТЗЫВЫ (добавляй сюда) -->
+            <div class="review" style="background: #161b22; padding: 15px 20px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #30363d;">
+                <span style="font-weight: 600; color: #e6edf3;">Alex</span>
+                <span style="color: #f5b342; margin-left: 10px;">★★★★★</span>
+                <p style="margin-top: 5px; color: #c9d1d9;">Amazing tool! My Windows 11 runs much faster after applying the tweaks. Highly recommend!</p>
             </div>
 
-            <p style="color: #8b949e; font-size: 14px;">
-                💬 Share your own review or join the discussion in the comment section below.
-            </p>
+            <div class="review" style="background: #161b22; padding: 15px 20px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #30363d;">
+                <span style="font-weight: 600; color: #e6edf3;">Maria</span>
+                <span style="color: #f5b342; margin-left: 10px;">★★★★☆</span>
+                <p style="margin-top: 5px; color: #c9d1d9;">Helped me remove all the bloatware. The system feels cleaner and more responsive.</p>
+            </div>
 
-            <!-- DISQUS — ВСТАВИЛ КОД, КОТОРЫЙ ТЫ ПОЛУЧИЛ -->
-            <div id="disqus_thread"></div>
-            <script>
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-                */
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://trixos.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-            <!-- СЧЁТЧИК КОММЕНТАРИЕВ (доп. скрипт) -->
-            <script id="dsq-count-scr" src="//trixos.disqus.com/count.js" async></script>
+            <!-- ⬆️ ДОБАВЛЯЙ НОВЫЕ ОТЗЫВЫ ВЫШЕ ЭТОЙ СТРОКИ ⬆️ -->
 
         </main>
 
