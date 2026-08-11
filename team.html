@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team — TrixOS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .team-card {
+            background: #161b22;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            padding: 20px 22px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .team-card:hover {
+            border-color: #58a6ff;
+            box-shadow: 0 4px 20px rgba(88, 166, 255, 0.05);
+        }
+
+        .team-card-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .team-avatar {
+            font-size: 42px;
+            line-height: 1;
+        }
+
+        .team-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #e6edf3;
+            margin: 0;
+        }
+
+        .team-role {
+            font-size: 14px;
+            color: #58a6ff;
+            margin: 0;
+        }
+
+        .team-toggle {
+            margin-left: auto;
+            font-size: 20px;
+            color: #8b949e;
+            transition: transform 0.3s ease;
+            user-select: none;
+        }
+
+        .team-toggle.open {
+            transform: rotate(180deg);
+        }
+
+        .team-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+            padding-top: 0;
+        }
+
+        .team-details.open {
+            max-height: 700px;
+            padding-top: 16px;
+        }
+
+        .team-details-inner {
+            border-top: 1px solid #30363d;
+            padding-top: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .team-details-inner p {
+            margin: 0;
+            font-size: 14px;
+            color: #8b949e;
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+
+        .team-details-inner .label {
+            font-weight: 600;
+            color: #e6edf3;
+            min-width: 100px;
+        }
+
+        .team-details-inner a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .team-details-inner a:hover {
+            text-decoration: underline;
+        }
+
+        .team-empty {
+            background: #161b22;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px dashed #30363d;
+            text-align: center;
+            color: #8b949e;
+            font-size: 14px;
+        }
+
+        .team-empty a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .team-details-inner p {
+                flex-direction: column;
+                gap: 2px;
+            }
+            .team-details-inner .label {
+                min-width: unset;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <h1><a href="index.html">TrixOS</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="https://t.me/trix7821" target="_blank">📱</a></li>
+                        <li><a href="https://www.youtube.com/@trixos7821" target="_blank">📺</a></li>
+                        <li><a href="https://www.twitch.tv/trix7821" target="_blank">🎮</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1>👥 Meet the Team</h1>
+            <p>The people behind TrixOS — building, testing, and improving every day.</p>
+
+            <div class="team-grid">
+
+                <!-- ============================================================ -->
+                <!-- КАРТОЧКА 1: 21trix (основатель) — ТЫ -->
+                <!-- ============================================================ -->
+                <div class="team-card" onclick="toggleCard(this)">
+                    <div class="team-card-header">
+                        <div class="team-avatar">⚡</div>
+                        <div>
+                            <div class="team-name">21trix (Ilya)</div>
+                            <div class="team-role">Founder &amp; Developer</div>
+                        </div>
+                        <div class="team-toggle">▾</div>
+                    </div>
+                    <div class="team-details">
+                        <div class="team-details-inner">
+                            <p><span class="label">✦ Role:</span> Founder &amp; Developer</p>
+                            <p><span class="label">✦ Experience:</span> 1.5+ years (since 2025)</p>
+                            <p><span class="label">✦ Specialization:</span> Windows optimization, system tweaks, UI/UX design</p>
+                            <p><span class="label">✦ Stack:</span> Python, C#, PowerShell, Windows API, Registry, GPO</p>
+                            <p><span class="label">✦ GitHub:</span> <a href="https://github.com/trix7821" target="_blank">github.com/trix7821</a></p>
+                            <p><span class="label">✦ Telegram:</span> <a href="https://t.me/trix7821" target="_blank">@trix7821</a></p>
+                            <p><span class="label">✦ YouTube:</span> <a href="https://www.youtube.com/@trixos7821" target="_blank">@trixos7821</a></p>
+                            <p><span class="label">✦ Contribution:</span> Owner TrixOS</p>
+                            <p><span class="label">✦ Bio:</span> Self-taught developer who started with simple scripts to automate Windows setup. Over time, I built a full-featured optimization tool with 15+ tweaks and three versions (GUI, Cloud, CLI). I believe good software should be free, open-source, and transparent. I created TrixOS to help anyone get a fast, clean, and private Windows experience without hassle.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================================ -->
+                <!-- КАРТОЧКА 2: Пример модератора (Telegram) -->
+                <!-- ============================================================ -->
+                <div class="team-card" onclick="toggleCard(this)">
+                    <div class="team-card-header">
+                        <div class="team-avatar">📱</div>
+                        <div>
+                            <div class="team-name">Alex</div>
+                            <div class="team-role">Telegram Moderator</div>
+                        </div>
+                        <div class="team-toggle">▾</div>
+                    </div>
+                    <div class="team-details">
+                        <div class="team-details-inner">
+                            <p><span class="label">✦ Role:</span> Telegram Moderator</p>
+                            <p><span class="label">✦ Experience:</span> 2 years in community management</p>
+                            <p><span class="label">✦ Specialization:</span> Community management, answering questions, spam control</p>
+                            <p><span class="label">✦ Telegram:</span> <a href="https://t.me/example" target="_blank">@example</a></p>
+                            <p><span class="label">✦ Contribution:</span> Keeps the TrixOS chat clean and helps users</p>
+                            <p><span class="label">✦ Bio:</span> Loves helping people and making tech communities friendly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================================ -->
+                <!-- КАРТОЧКА 3: Пример тестера -->
+                <!-- ============================================================ -->
+                <div class="team-card" onclick="toggleCard(this)">
+                    <div class="team-card-header">
+                        <div class="team-avatar">🧪</div>
+                        <div>
+                            <div class="team-name">Maria</div>
+                            <div class="team-role">Tester</div>
+                        </div>
+                        <div class="team-toggle">▾</div>
+                    </div>
+                    <div class="team-details">
+                        <div class="team-details-inner">
+                            <p><span class="label">✦ Role:</span> Tester</p>
+                            <p><span class="label">✦ Experience:</span> 3 years in QA</p>
+                            <p><span class="label">✦ Specialization:</span> Bug hunting, regression testing, Windows 10/11</p>
+                            <p><span class="label">✦ GitHub:</span> <a href="https://github.com/example" target="_blank">github.com/example</a></p>
+                            <p><span class="label">✦ Contribution:</span> Tests all new versions, finds and reports bugs</p>
+                            <p><span class="label">✦ Bio:</span> Loves breaking things just to fix them and make them better.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================================ -->
+                <!-- КАРТОЧКА-ЗАГЛУШКА (для новых модераторов) -->
+                <!-- ============================================================ -->
+                <div class="team-card" style="border-color: #30363d; opacity: 0.6; cursor: default;" onclick="event.stopPropagation();">
+                    <div class="team-card-header">
+                        <div class="team-avatar">➕</div>
+                        <div>
+                            <div class="team-name" style="color: #8b949e;">Join the Team</div>
+                            <div class="team-role" style="color: #8b949e;">Open position</div>
+                        </div>
+                    </div>
+                    <div style="padding-top: 10px; border-top: 1px solid #30363d; margin-top: 6px;">
+                        <p style="font-size: 14px; color: #8b949e; margin: 0;">Want to become a part of the TrixOS team?</p>
+                        <a href="apply.html" style="color: #58a6ff; text-decoration: none; font-size: 14px;">Apply here →</a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 TrixOS. Open source. MIT License.</p>
+            <p style="margin-top:5px; font-size:13px;">
+                📧 <a href="mailto:trixos7821@gmail.com" style="color:#0073e6; text-decoration:none;">trixos7821@gmail.com</a>
+            </p>
+            <div style="margin-top: 15px;">
+                <a href="https://t.me/trix7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">📱 Telegram</a>
+                <a href="https://www.youtube.com/@trixos7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">📺 YouTube</a>
+                <a href="https://www.twitch.tv/trix7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">🎮 Twitch</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleCard(card) {
+            const details = card.querySelector('.team-details');
+            const toggle = card.querySelector('.team-toggle');
+
+            if (details.classList.contains('open')) {
+                details.classList.remove('open');
+                toggle.classList.remove('open');
+                toggle.textContent = '▾';
+            } else {
+                document.querySelectorAll('.team-details.open').forEach(function(el) {
+                    el.classList.remove('open');
+                    el.closest('.team-card').querySelector('.team-toggle').classList.remove('open');
+                    el.closest('.team-card').querySelector('.team-toggle').textContent = '▾';
+                });
+                details.classList.add('open');
+                toggle.classList.add('open');
+                toggle.textContent = '▴';
+            }
+        }
+    </script>
+</body>
+</html>
