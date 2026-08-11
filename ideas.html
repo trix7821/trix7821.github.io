@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas — TrixOS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .idea-item {
+            background: #161b22;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            padding: 18px 22px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            transition: border-color 0.2s;
+        }
+        .idea-item:hover { border-color: #58a6ff; }
+        .idea-votes {
+            display: flex;
+            gap: 12px;
+            font-size: 18px;
+            min-width: 100px;
+            justify-content: flex-end;
+        }
+        .idea-votes span { cursor: pointer; user-select: none; transition: transform 0.2s; }
+        .idea-votes span:hover { transform: scale(1.3); }
+        .idea-content { flex: 1; }
+        .idea-content h3 { margin: 0 0 4px 0; color: #e6edf3; }
+        .idea-content p { margin: 0; color: #8b949e; font-size: 14px; }
+        .idea-status { font-size: 12px; padding: 2px 12px; border-radius: 20px; background: #30363d; color: #8b949e; }
+        .idea-status.planned { background: #f0883e; color: #fff; }
+        .idea-status.done { background: #238636; color: #fff; }
+        .idea-form { margin: 30px 0; }
+        .idea-form textarea {
+            width: 100%;
+            padding: 12px 16px;
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            color: #e6edf3;
+            font-size: 16px;
+            resize: vertical;
+            min-height: 80px;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <h1><a href="index.html">TrixOS</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="ideas.html">Ideas</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="https://t.me/trix7821" target="_blank">📱</a></li>
+                        <li><a href="https://www.youtube.com/@trixos7821" target="_blank">📺</a></li>
+                        <li><a href="https://www.twitch.tv/trix7821" target="_blank">🎮</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1>💡 Ideas for TrixOS</h1>
+            <p>What would you like to see in future updates? Vote for your favorite ideas!</p>
+
+            <div class="idea-item">
+                <div class="idea-content">
+                    <h3>Add tweak to disable Windows Copilot</h3>
+                    <p>Many users want to remove Copilot integration from Windows 11.</p>
+                </div>
+                <div class="idea-status planned">Planned</div>
+                <div class="idea-votes">
+                    <span onclick="vote(this)">👍 12</span>
+                    <span onclick="vote(this)">👎 2</span>
+                </div>
+            </div>
+
+            <div class="idea-item">
+                <div class="idea-content">
+                    <h3>Dark theme for the app itself</h3>
+                    <p>TrixOS GUI should have a native dark mode.</p>
+                </div>
+                <div class="idea-status planned">Planned</div>
+                <div class="idea-votes">
+                    <span onclick="vote(this)">👍 8</span>
+                    <span onclick="vote(this)">👎 1</span>
+                </div>
+            </div>
+
+            <div class="idea-item">
+                <div class="idea-content">
+                    <h3>One-click backup of all tweaks</h3>
+                    <p>Export all applied tweaks to a file for later restore.</p>
+                </div>
+                <div class="idea-status" style="background:#30363d;color:#8b949e;">Under review</div>
+                <div class="idea-votes">
+                    <span onclick="vote(this)">👍 6</span>
+                    <span onclick="vote(this)">👎 3</span>
+                </div>
+            </div>
+
+            <div class="idea-item">
+                <div class="idea-content">
+                    <h3>Support for Windows 11 24H2</h3>
+                    <p>Ensure all tweaks work on the latest Windows 11 build.</p>
+                </div>
+                <div class="idea-status done">✅ Done</div>
+                <div class="idea-votes">
+                    <span onclick="vote(this)">👍 15</span>
+                    <span onclick="vote(this)">👎 0</span>
+                </div>
+            </div>
+
+            <div class="idea-form">
+                <h3>📬 Suggest your own idea</h3>
+                <p style="font-size: 14px; color: #8b949e;">Send your suggestion via email or Telegram.</p>
+                <a href="mailto:trixos7821@gmail.com?subject=Idea%20for%20TrixOS" class="btn btn-primary">Email Idea</a>
+                <a href="https://t.me/trix7821" target="_blank" class="btn btn-secondary" style="margin-left: 10px;">Telegram</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 TrixOS. Open source. MIT License.</p>
+            <p style="margin-top:5px; font-size:13px;">
+                📧 <a href="mailto:trixos7821@gmail.com" style="color:#0073e6; text-decoration:none;">trixos7821@gmail.com</a>
+            </p>
+            <div style="margin-top: 15px;">
+                <a href="https://t.me/trix7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">📱 Telegram</a>
+                <a href="https://www.youtube.com/@trixos7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">📺 YouTube</a>
+                <a href="https://www.twitch.tv/trix7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">🎮 Twitch</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function vote(el) {
+            let text = el.textContent.trim();
+            let parts = text.split(' ');
+            let count = parseInt(parts[1]);
+            if (isNaN(count)) return;
+            count += 1;
+            el.textContent = parts[0] + ' ' + count;
+            el.style.transition = 'transform 0.2s';
+            el.style.transform = 'scale(1.3)';
+            setTimeout(() => { el.style.transform = 'scale(1)'; }, 200);
+        }
+    </script>
+</body>
+</html>
