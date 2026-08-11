@@ -12,7 +12,6 @@
             gap: 25px;
             margin-top: 30px;
         }
-
         .team-card {
             background: #161b22;
             border-radius: 12px;
@@ -21,36 +20,30 @@
             transition: border-color 0.2s, box-shadow 0.2s;
             cursor: pointer;
         }
-
         .team-card:hover {
             border-color: #58a6ff;
             box-shadow: 0 4px 20px rgba(88, 166, 255, 0.05);
         }
-
         .team-card-header {
             display: flex;
             align-items: center;
             gap: 14px;
         }
-
         .team-avatar {
             font-size: 42px;
             line-height: 1;
         }
-
         .team-name {
             font-size: 20px;
             font-weight: 700;
             color: #e6edf3;
             margin: 0;
         }
-
         .team-role {
             font-size: 14px;
             color: #58a6ff;
             margin: 0;
         }
-
         .team-toggle {
             margin-left: auto;
             font-size: 20px;
@@ -58,23 +51,19 @@
             transition: transform 0.3s ease;
             user-select: none;
         }
-
         .team-toggle.open {
             transform: rotate(180deg);
         }
-
         .team-details {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s ease, padding 0.3s ease;
             padding-top: 0;
         }
-
         .team-details.open {
             max-height: 700px;
             padding-top: 16px;
         }
-
         .team-details-inner {
             border-top: 1px solid #30363d;
             padding-top: 14px;
@@ -82,7 +71,6 @@
             flex-direction: column;
             gap: 6px;
         }
-
         .team-details-inner p {
             margin: 0;
             font-size: 14px;
@@ -91,48 +79,22 @@
             align-items: baseline;
             gap: 8px;
         }
-
         .team-details-inner .label {
             font-weight: 600;
             color: #e6edf3;
             min-width: 100px;
         }
-
         .team-details-inner a {
             color: #58a6ff;
             text-decoration: none;
         }
-
         .team-details-inner a:hover {
             text-decoration: underline;
         }
-
-        .team-empty {
-            background: #161b22;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px dashed #30363d;
-            text-align: center;
-            color: #8b949e;
-            font-size: 14px;
-        }
-
-        .team-empty a {
-            color: #58a6ff;
-            text-decoration: none;
-        }
-
         @media (max-width: 600px) {
-            .team-grid {
-                grid-template-columns: 1fr;
-            }
-            .team-details-inner p {
-                flex-direction: column;
-                gap: 2px;
-            }
-            .team-details-inner .label {
-                min-width: unset;
-            }
+            .team-grid { grid-template-columns: 1fr; }
+            .team-details-inner p { flex-direction: column; gap: 2px; }
+            .team-details-inner .label { min-width: unset; }
         }
     </style>
 </head>
@@ -152,6 +114,8 @@
                         <li><a href="support.html">Support</a></li>
                         <li><a href="reviews.html">Reviews</a></li>
                         <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="ideas.html">Ideas</a></li>
                         <li><a href="team.html">Team</a></li>
                         <li><a href="https://t.me/trix7821" target="_blank">📱</a></li>
                         <li><a href="https://www.youtube.com/@trixos7821" target="_blank">📺</a></li>
@@ -166,10 +130,6 @@
             <p>The people behind TrixOS — building, testing, and improving every day.</p>
 
             <div class="team-grid">
-
-                <!-- ============================================================ -->
-                <!-- КАРТОЧКА 1: 21trix (основатель) — ТЫ -->
-                <!-- ============================================================ -->
                 <div class="team-card" onclick="toggleCard(this)">
                     <div class="team-card-header">
                         <div class="team-avatar">⚡</div>
@@ -194,9 +154,6 @@
                     </div>
                 </div>
 
-                <!-- ============================================================ -->
-                <!-- КАРТОЧКА-ЗАГЛУШКА (для новых модераторов) -->
-                <!-- ============================================================ -->
                 <div class="team-card" style="border-color: #30363d; opacity: 0.6; cursor: default;" onclick="event.stopPropagation();">
                     <div class="team-card-header">
                         <div class="team-avatar">➕</div>
@@ -210,7 +167,6 @@
                         <a href="apply.html" style="color: #58a6ff; text-decoration: none; font-size: 14px;">Apply here →</a>
                     </div>
                 </div>
-
             </div>
         </main>
 
@@ -220,6 +176,9 @@
                 📧 <a href="mailto:trixos7821@gmail.com" style="color:#0073e6; text-decoration:none;">trixos7821@gmail.com</a>
             </p>
             <div style="margin-top: 15px;">
+                <a href="https://t.me/trix7821" target="_blank" class="btn btn-secondary" style="background: #1f8ef1; color: #fff; border: none; padding: 10px 24px; text-decoration: none; display: inline-block; border-radius: 8px; font-weight: 600;">📱 Subscribe on Telegram</a>
+            </div>
+            <div style="margin-top: 10px;">
                 <a href="https://t.me/trix7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">📱 Telegram</a>
                 <a href="https://www.youtube.com/@trixos7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">📺 YouTube</a>
                 <a href="https://www.twitch.tv/trix7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">🎮 Twitch</a>
@@ -231,7 +190,6 @@
         function toggleCard(card) {
             const details = card.querySelector('.team-details');
             const toggle = card.querySelector('.team-toggle');
-
             if (details.classList.contains('open')) {
                 details.classList.remove('open');
                 toggle.classList.remove('open');
