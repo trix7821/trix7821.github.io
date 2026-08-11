@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guides — TrixOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <h1><a href="index.html">TrixOS</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="ideas.html">Ideas</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                        <li><button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">☀️</button></li>
+                        <li><a href="https://t.me/trix7821" target="_blank">📱</a></li>
+                        <li><a href="https://www.youtube.com/@trixos7821" target="_blank">📺</a></li>
+                        <li><a href="https://www.twitch.tv/trix7821" target="_blank">🎮</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1>🛠️ Interactive Guides</h1>
+            <p>Step-by-step instructions to get the most out of TrixOS. Click on each step to expand.</p>
+
+            <!-- Гайд 1: Установка -->
+            <h2 style="margin-top: 40px;">📥 How to Install TrixOS</h2>
+            <div class="guide-step" onclick="toggleGuide(this)">
+                <div class="guide-step-header">
+                    <span class="step-number">1</span>
+                    Download the installer
+                </div>
+                <div class="guide-step-content">
+                    <p>Go to the <a href="download.html">Download page</a> and click the <strong>Download Installer</strong> button. The file <code>TrixOS_Installer.exe</code> will be saved to your computer.</p>
+                    <img src="gui.png" alt="Download page" style="max-width:100%; border-radius:8px; border:1px solid var(--border-color);">
+                </div>
+            </div>
+
+            <div class="guide-step" onclick="toggleGuide(this)">
+                <div class="guide-step-header">
+                    <span class="step-number">2</span>
+                    Run the installer
+                </div>
+                <div class="guide-step-content">
+                    <p>Double-click the downloaded file. If Windows SmartScreen appears, click <strong>"More info"</strong> and then <strong>"Run anyway"</strong> (TrixOS is open-source and safe).</p>
+                </div>
+            </div>
+
+            <div class="guide-step" onclick="toggleGuide(this)">
+                <div class="guide-step-header">
+                    <span class="step-number">3</span>
+                    Choose components
+                </div>
+                <div class="guide-step-content">
+                    <p>Select which components you want to install: <strong>GUI</strong>, <strong>Cloud</strong>, or <strong>CLI</strong>. We recommend installing all three.</p>
+                </div>
+            </div>
+
+            <div class="guide-step" onclick="toggleGuide(this)">
+                <div class="step-number" style="background: var(--link-color); color: #fff; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">4</div>
+                <div class="guide-step-header">
+                    <span class="step-number">4</span>
+                    Launch TrixOS
+                </div>
+                <div class="guide-step-content">
+                    <p>After installation, you can launch TrixOS from the Start Menu or desktop shortcut. The first time, the app will check for updates and show you the main dashboard.</p>
+                </div>
+            </div>
+
+            <!-- Гайд 2: Применение твиков -->
+            <h2 style="margin-top: 40px;">⚡ How to Apply Tweaks</h2>
+            <div class="guide-step" onclick="toggleGuide(this)">
+                <div class="guide-step-header">
+                    <span class="step-number">1</span>
+                    Open the Tweaks tab
+                </div>
+                <div class="guide-step-content">
+                    <p>In the main window, click on the <strong>"Tweaks"</strong> tab. You'll see a list of all available tweaks grouped by category.</p>
+                    <img src="tweaks.png" alt="Tweaks tab" style="max-width:100%; border-radius:8px; border:1px solid var(--border-color);">
+                </div>
+            </div>
+
+            <div class="guide-step" onclick="toggleGuide(this)">
+                <div class="guide-step-header">
+                    <span class="step-number">2</span>
+                    Select tweaks
+                </div>
+                <div class="guide-step-content">
+                    <p>Check the boxes next to the tweaks you want to apply. Hover over any tweak to see a description of what it does.</p>
+                </div>
+            </div>
+
+            <div class="guide-step" onclick="toggleGuide(this)">
+                <div class="guide-step-header">
+                    <span class="step-number">3</span>
+                    Apply and restore
+                </div>
+                <div class="guide-step-content">
+                    <p>Click <strong>"Apply Selected"</strong> to apply the tweaks. A system restore point will be created automatically. If something goes wrong, use <strong>"Revert Selected"</strong> or restore from the restore point.</p>
+                </div>
+            </div>
+
+            <p style="color: var(--text-secondary); font-size: 14px; margin-top: 30px;">
+                📸 More screenshots and detailed guides coming soon. If you need help, <a href="mailto:trixos7821@gmail.com" style="color: var(--link-color);">email us</a> or <a href="https://t.me/trix7821" style="color: var(--link-color);">write on Telegram</a>.
+            </p>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 TrixOS. Open source. MIT License.</p>
+            <p style="margin-top:5px; font-size:13px;">
+                📧 <a href="mailto:trixos7821@gmail.com" style="color: var(--link-color); text-decoration:none;">trixos7821@gmail.com</a>
+            </p>
+            <div style="margin-top: 15px;">
+                <a href="https://t.me/trix7821" target="_blank" class="btn btn-secondary" style="background: #1f8ef1; color: #fff; border: none; padding: 10px 24px; text-decoration: none; display: inline-block; border-radius: 8px; font-weight: 600;">📱 Subscribe on Telegram</a>
+            </div>
+            <div style="margin-top: 10px;">
+                <a href="https://t.me/trix7821" target="_blank" style="color: var(--link-color); text-decoration: none; margin: 0 10px;">📱 Telegram</a>
+                <a href="https://www.youtube.com/@trixos7821" target="_blank" style="color: var(--link-color); text-decoration: none; margin: 0 10px;">📺 YouTube</a>
+                <a href="https://www.twitch.tv/trix7821" target="_blank" style="color: var(--link-color); text-decoration: none; margin: 0 10px;">🎮 Twitch</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="theme.js"></script>
+    <script>
+        function toggleGuide(el) {
+            const content = el.querySelector('.guide-step-content');
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+            } else {
+                // закрыть все остальные
+                document.querySelectorAll('.guide-step-content.open').forEach(c => c.classList.remove('open'));
+                content.classList.add('open');
+            }
+        }
+    </script>
+</body>
+</html>
