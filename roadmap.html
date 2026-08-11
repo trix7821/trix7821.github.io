@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .roadmap-container { max-width: 800px; margin: 0 auto; padding: 20px 0; }
-        .roadmap-item { background: #161b22; border-radius: 12px; border: 1px solid #30363d; padding: 20px 24px; margin-bottom: 16px; border-left: 4px solid #58a6ff; }
+        .roadmap-item { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); padding: 20px 24px; margin-bottom: 16px; border-left: 4px solid var(--link-color); }
         .roadmap-item.done { border-left-color: #238636; }
         .roadmap-item.in-progress { border-left-color: #f0883e; }
         .roadmap-item.planned { border-left-color: #8b949e; }
@@ -15,9 +15,9 @@
         .badge.done { background: #238636; color: #fff; }
         .badge.in-progress { background: #f0883e; color: #fff; }
         .badge.planned { background: #30363d; color: #8b949e; }
-        .roadmap-item h3 { margin: 0 0 4px 0; color: #e6edf3; }
-        .roadmap-item p { margin: 0; color: #8b949e; font-size: 14px; }
-        .roadmap-item .date { color: #8b949e; font-size: 12px; margin-top: 6px; display: block; }
+        .roadmap-item h3 { margin: 0 0 4px 0; color: var(--text-color); }
+        .roadmap-item p { margin: 0; color: var(--text-secondary); font-size: 14px; }
+        .roadmap-item .date { color: var(--text-secondary); font-size: 12px; margin-top: 6px; display: block; }
     </style>
 </head>
 <body>
@@ -25,8 +25,11 @@
         <header>
             <div class="header-content">
                 <div class="logo">
-                    <span class="logo-icon">⚡</span>
-                    <h1><a href="index.html">TrixOS</a></h1>
+                    <a href="index.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                        <span class="logo-icon">⚡</span>
+                        <span style="font-size: 28px; font-weight: 700; color: var(--text-color);">TrixOS</span>
+                        <span style="font-size: 16px; font-weight: 400; color: var(--text-secondary);">Beta</span>
+                    </a>
                 </div>
                 <nav>
                     <ul>
@@ -39,6 +42,8 @@
                         <li><a href="roadmap.html">Roadmap</a></li>
                         <li><a href="ideas.html">Ideas</a></li>
                         <li><a href="team.html">Team</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                        <li><button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">☀️</button></li>
                         <li><a href="https://t.me/trix7821" target="_blank">📱</a></li>
                         <li><a href="https://www.youtube.com/@trixos7821" target="_blank">📺</a></li>
                         <li><a href="https://www.twitch.tv/trix7821" target="_blank">🎮</a></li>
@@ -50,58 +55,55 @@
         <main>
             <h1>🗓️ Roadmap</h1>
             <p>What's coming next for TrixOS — planned, in progress, and already done.</p>
-
             <div class="roadmap-container">
-
                 <div class="roadmap-item done">
                     <span class="badge done">✅ Done</span>
                     <h3>Initial release with 15+ tweaks</h3>
                     <p>First public version with GUI, Cloud, and CLI editions.</p>
                     <span class="date">Released: August 10, 2026</span>
                 </div>
-
                 <div class="roadmap-item done">
                     <span class="badge done">✅ Done</span>
                     <h3>Tooltips &amp; status detection</h3>
                     <p>Hover tooltips for tweaks and auto-detection of applied tweaks.</p>
                     <span class="date">Released: August 11, 2026 (v1.0.2)</span>
                 </div>
-
                 <div class="roadmap-item in-progress">
                     <span class="badge in-progress">🔄 In Progress</span>
                     <h3>New tweaks: Windows Copilot &amp; more</h3>
                     <p>Adding ability to disable Windows Copilot and other new features.</p>
                     <span class="date">Expected: September 2026</span>
                 </div>
-
                 <div class="roadmap-item planned">
                     <span class="badge planned">📌 Planned</span>
                     <h3>Dark / Light theme for the app</h3>
                     <p>System-wide theme toggle for TrixOS GUI.</p>
                     <span class="date">Planned: Q4 2026</span>
                 </div>
-
                 <div class="roadmap-item planned">
                     <span class="badge planned">📌 Planned</span>
                     <h3>Multi-language support</h3>
                     <p>Translate TrixOS into 5+ languages.</p>
                     <span class="date">Planned: 2027</span>
                 </div>
-
             </div>
         </main>
 
         <footer>
             <p>&copy; 2026 TrixOS. Open source. MIT License.</p>
             <p style="margin-top:5px; font-size:13px;">
-                📧 <a href="mailto:trixos7821@gmail.com" style="color:#0073e6; text-decoration:none;">trixos7821@gmail.com</a>
+                📧 <a href="mailto:trixos7821@gmail.com" style="color: var(--link-color); text-decoration:none;">trixos7821@gmail.com</a>
             </p>
             <div style="margin-top: 15px;">
-                <a href="https://t.me/trix7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">📱 Telegram</a>
-                <a href="https://www.youtube.com/@trixos7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">📺 YouTube</a>
-                <a href="https://www.twitch.tv/trix7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">🎮 Twitch</a>
+                <a href="https://t.me/trix7821" target="_blank" class="btn btn-secondary" style="background: #1f8ef1; color: #fff; border: none; padding: 10px 24px; text-decoration: none; display: inline-block; border-radius: 8px; font-weight: 600;">📱 Subscribe on Telegram</a>
+            </div>
+            <div style="margin-top: 10px;">
+                <a href="https://t.me/trix7821" target="_blank" style="color: var(--link-color); text-decoration: none; margin: 0 10px;">📱 Telegram</a>
+                <a href="https://www.youtube.com/@trixos7821" target="_blank" style="color: var(--link-color); text-decoration: none; margin: 0 10px;">📺 YouTube</a>
+                <a href="https://www.twitch.tv/trix7821" target="_blank" style="color: var(--link-color); text-decoration: none; margin: 0 10px;">🎮 Twitch</a>
             </div>
         </footer>
     </div>
+    <script src="theme.js"></script>
 </body>
 </html>
