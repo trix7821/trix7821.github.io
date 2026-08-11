@@ -1,4 +1,4 @@
-/* style.css — тёмная тема, адаптив, улучшенная форма */
+/* style.css — тёмная тема, адаптив, все секции */
 
 * {
     margin: 0;
@@ -20,7 +20,6 @@ body {
     padding: 20px 0;
 }
 
-/* Шапка */
 header {
     border-bottom: 1px solid #30363d;
     padding: 20px 0;
@@ -72,7 +71,6 @@ nav ul li a:hover {
     color: #58a6ff;
 }
 
-/* Герой */
 .hero {
     text-align: center;
     padding: 40px 0 30px;
@@ -140,7 +138,6 @@ nav ul li a:hover {
     background: #f2994a;
 }
 
-/* Секции */
 section {
     margin: 50px 0;
 }
@@ -162,7 +159,6 @@ p {
     color: #8b949e;
 }
 
-/* Фичи */
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -187,7 +183,6 @@ p {
     margin-bottom: 10px;
 }
 
-/* Безопасность */
 .safety-box {
     background: #161b22;
     padding: 25px 30px;
@@ -201,13 +196,11 @@ p {
     margin-bottom: 8px;
 }
 
-/* Поддержка */
 .support-section {
     text-align: center;
     padding: 20px 0;
 }
 
-/* Подвал */
 footer {
     border-top: 1px solid #30363d;
     margin-top: 50px;
@@ -226,7 +219,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Форма отзывов */
 .review-form {
     max-width: 600px;
     margin: 0 auto;
@@ -272,7 +264,6 @@ footer a:hover {
     text-align: center;
 }
 
-/* Скриншоты */
 .screenshots-section {
     text-align: center;
     padding: 20px 0;
@@ -312,7 +303,97 @@ footer a:hover {
     margin: 0;
 }
 
-/* Адаптив */
+/* НОВЫЕ СТИЛИ ДЛЯ МОДЕРАЦИИ И БЛАГОДАРНОСТЕЙ */
+.join-section {
+    margin: 60px 0 40px;
+}
+
+.join-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.join-card {
+    background: #161b22;
+    padding: 30px 25px;
+    border-radius: 12px;
+    border: 1px solid #30363d;
+    text-align: center;
+    transition: border-color 0.2s;
+}
+
+.join-card:hover {
+    border-color: #58a6ff;
+}
+
+.join-icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.join-card h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #e6edf3;
+}
+
+.join-card p {
+    color: #8b949e;
+    margin-bottom: 20px;
+}
+
+.join-card .btn {
+    display: inline-block;
+    padding: 12px 28px;
+}
+
+.thanks-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.thanks-name {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 14px;
+    color: #e6edf3;
+    display: inline-block;
+}
+
+.tweaks-list {
+    background: #161b22;
+    padding: 25px 30px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    margin-bottom: 20px;
+}
+
+.tweaks-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tweaks-list ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #30363d;
+    color: #e6edf3;
+}
+
+.tweaks-list ul li:last-child {
+    border-bottom: none;
+}
+
+.tweaks-list ul li::before {
+    content: "✅ ";
+}
+
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -345,6 +426,9 @@ footer a:hover {
     }
     .screenshot-grid {
         grid-template-columns: 1fr 1fr;
+    }
+    .join-grid {
+        grid-template-columns: 1fr;
     }
 }
 
