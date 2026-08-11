@@ -303,7 +303,6 @@ footer a:hover {
     margin: 0;
 }
 
-/* НОВЫЕ СТИЛИ ДЛЯ МОДЕРАЦИИ И БЛАГОДАРНОСТЕЙ */
 .join-section {
     margin: 60px 0 40px;
 }
@@ -394,6 +393,44 @@ footer a:hover {
     content: "✅ ";
 }
 
+/* ===== Стили для apply.html ===== */
+.role-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.role-card {
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+}
+
+.role-card .role-icon {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.role-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #e6edf3;
+}
+
+.role-card p {
+    font-size: 14px;
+    color: #8b949e;
+    margin-bottom: 0;
+}
+
+iframe {
+    border-radius: 12px;
+    background: #0d1117;
+}
+
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -430,6 +467,9 @@ footer a:hover {
     .join-grid {
         grid-template-columns: 1fr;
     }
+    .role-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -452,6 +492,9 @@ footer a:hover {
         padding: 12px 16px;
     }
     .screenshot-grid {
+        grid-template-columns: 1fr;
+    }
+    .role-grid {
         grid-template-columns: 1fr;
     }
 }
