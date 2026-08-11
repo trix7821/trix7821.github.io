@@ -187,20 +187,6 @@ p {
     margin-bottom: 10px;
 }
 
-.features-note {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.features-note a {
-    color: #58a6ff;
-    text-decoration: none;
-}
-
-.features-note a:hover {
-    text-decoration: underline;
-}
-
 /* Безопасность */
 .safety-box {
     background: #161b22;
@@ -213,38 +199,6 @@ p {
     font-size: 28px;
     display: block;
     margin-bottom: 8px;
-}
-
-/* Скриншоты (заглушка) */
-.screenshot-placeholder {
-    background: #161b22;
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px dashed #30363d;
-    text-align: center;
-}
-
-.screenshot-placeholder code {
-    background: #0d1117;
-    padding: 2px 8px;
-    border-radius: 4px;
-    color: #e6edf3;
-}
-
-.screenshot-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.screenshot-item {
-    background: #0d1117;
-    padding: 30px 10px;
-    border-radius: 8px;
-    border: 1px solid #30363d;
-    color: #8b949e;
-    font-size: 14px;
 }
 
 /* Поддержка */
@@ -272,7 +226,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Адаптив */
+/* Адаптив для мобильных */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -280,6 +234,7 @@ footer a:hover {
     }
     nav ul {
         justify-content: center;
+        gap: 15px;
     }
     .hero h1 {
         font-size: 30px;
@@ -290,6 +245,15 @@ footer a:hover {
     .feature-grid {
         grid-template-columns: 1fr 1fr;
     }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -299,12 +263,16 @@ footer a:hover {
     .hero h1 {
         font-size: 24px;
     }
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
+    .hero .subtitle {
+        font-size: 14px;
+    }
+    nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .btn {
-        width: 100%;
-        text-align: center;
+        font-size: 14px;
+        padding: 12px 16px;
     }
 }
