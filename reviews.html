@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews — TrixOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="index.html">TrixOS</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Leave Your Feedback</h1>
+            <p>Have you used TrixOS? Share your experience with the community!</p>
+
+            <!-- Форма для отправки на почту (для анонимных отзывов) -->
+            <form action="https://formsubmit.co/sxhew78@gmail.com" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="review">Your Review</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+
+                <label for="rating">Rating (1–5 stars)</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+                <button type="submit" class="btn">Submit Review</button>
+            </form>
+
+            <hr style="margin: 40px 0; border: none; border-top: 2px solid #eee;">
+
+            <h2>💬 Discussion &amp; Reviews</h2>
+            <p>Join the conversation below. Share your thoughts, ask questions, and help others!</p>
+
+            <!-- ⬇️ СЮДА ВСТАВЬ КОД ОТ DISQUS ⬇️ -->
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+                *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+                *  PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+                *  https://disqus.com/admin/universalcode/#configuration-variables
+                */
+                /*
+                var disqus_config = function () {
+                    // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.url = PAGE_URL;  
+                    // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    this.page.identifier = PAGE_IDENTIFIER; 
+                };
+                */
+                (function() {  // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://trixos.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <!-- ⬆️ КОНЕЦ КОДА DISQUS ⬆️ -->
+        </main>
+
+        <footer>
+            &copy; 2026 TrixOS. Open source.
+        </footer>
+    </div>
+</body>
+</html>
