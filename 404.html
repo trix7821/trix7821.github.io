@@ -15,16 +15,16 @@
         .error-container .error-code {
             font-size: 80px;
             font-weight: 800;
-            color: #58a6ff;
+            color: var(--link-color);
             margin: 0;
         }
         .error-container .error-message {
             font-size: 24px;
-            color: #e6edf3;
             margin: 10px 0 20px;
+            color: var(--text-primary);
         }
         .error-container .error-desc {
-            color: #8b949e;
+            color: var(--text-secondary);
             margin-bottom: 30px;
         }
         .error-container .btn {
@@ -38,8 +38,11 @@
         <header>
             <div class="header-content">
                 <div class="logo">
-                    <span class="logo-icon">⚡</span>
-                    <h1><a href="index.html">TrixOS</a></h1>
+                    <a href="index.html">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">TrixOS</span>
+                        <span class="logo-beta">Beta</span>
+                    </a>
                 </div>
                 <nav>
                     <ul>
@@ -49,10 +52,10 @@
                         <li><a href="support.html">Support</a></li>
                         <li><a href="reviews.html">Reviews</a></li>
                         <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="roadmap.html">Roadmap</a></li>
-                        <li><a href="ideas.html">Ideas</a></li>
                         <li><a href="team.html">Team</a></li>
-                        <li><a href="https://t.me/trix7821" target="_blank">📱</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                        <li><button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">☀️</button></li>
+                        <li><a href="https://t.me/TrixOS_Support_bot" target="_blank">📱</a></li>
                         <li><a href="https://www.youtube.com/@trixos7821" target="_blank">📺</a></li>
                         <li><a href="https://www.twitch.tv/trix7821" target="_blank">🎮</a></li>
                     </ul>
@@ -74,14 +77,18 @@
         <footer>
             <p>&copy; 2026 TrixOS. Open source. MIT License.</p>
             <p style="margin-top:5px; font-size:13px;">
-                📧 <a href="mailto:trixos7821@gmail.com" style="color:#0073e6; text-decoration:none;">trixos7821@gmail.com</a>
+                📧 <a href="mailto:trixos7821@gmail.com" style="color: var(--link-color); text-decoration:none;">trixos7821@gmail.com</a>
             </p>
             <div style="margin-top: 15px;">
-                <a href="https://t.me/trix7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">📱 Telegram</a>
-                <a href="https://www.youtube.com/@trixos7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">📺 YouTube</a>
-                <a href="https://www.twitch.tv/trix7821" target="_blank" style="color: #58a6ff; text-decoration: none; margin: 0 10px;">🎮 Twitch</a>
+                <a href="https://t.me/TrixOS_Support_bot" target="_blank" class="btn btn-secondary" style="background: #1f8ef1; color: #fff; border: none; padding: 10px 24px; text-decoration: none; display: inline-block; border-radius: 8px; font-weight: 600;">📱 Contact Support</a>
+            </div>
+            <div style="margin-top: 10px;">
+                <a href="https://t.me/TrixOS_Support_bot" target="_blank" style="color: var(--link-color); text-decoration: none; margin: 0 10px;">📱 Support Bot</a>
+                <a href="https://www.youtube.com/@trixos7821" target="_blank" style="color: var(--link-color); text-decoration: none; margin: 0 10px;">📺 YouTube</a>
+                <a href="https://www.twitch.tv/trix7821" target="_blank" style="color: var(--link-color); text-decoration: none; margin: 0 10px;">🎮 Twitch</a>
             </div>
         </footer>
     </div>
+    <script src="theme.js"></script>
 </body>
 </html>
