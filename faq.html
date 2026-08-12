@@ -11,10 +11,10 @@
         <header>
             <div class="header-content">
                 <div class="logo">
-                    <a href="index.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                    <a href="index.html">
                         <span class="logo-icon">⚡</span>
-                        <span style="font-size: 28px; font-weight: 700; color: var(--text-color);">TrixOS</span>
-                        <span style="font-size: 16px; font-weight: 400; color: var(--text-secondary);">Beta</span>
+                        <span class="logo-text">TrixOS</span>
+                        <span class="logo-beta">Beta</span>
                     </a>
                 </div>
                 <nav>
@@ -25,8 +25,6 @@
                         <li><a href="support.html">Support</a></li>
                         <li><a href="reviews.html">Reviews</a></li>
                         <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="roadmap.html">Roadmap</a></li>
-                        <li><a href="ideas.html">Ideas</a></li>
                         <li><a href="team.html">Team</a></li>
                         <li><a href="guides.html">Guides</a></li>
                         <li><button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">☀️</button></li>
@@ -41,64 +39,64 @@
         <main>
             <h1>Frequently Asked Questions</h1>
             <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: Does TrixOS work on Windows 11?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: Does TrixOS work on Windows 11?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: Yes, TrixOS is fully compatible with both Windows 10 and Windows 11 (all recent builds, including 22H2 and 23H2).</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: Do I need to disable my antivirus to use it?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: Do I need to disable my antivirus to use it?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: Windows Defender might flag the tool as a false positive because it modifies system settings. It's completely safe. You can temporarily pause Defender or add the folder to exclusions.</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: Can I undo the tweaks?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: Can I undo the tweaks?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: Absolutely. Just use the "Restore System" option in the tool, or use the Windows System Restore point that TrixOS creates automatically before each run.</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: Is this a virus?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: Is this a virus?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: No. TrixOS is open‑source. You can check the entire code on GitHub. It contains no malware or spyware.</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: How often do you update it?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: How often do you update it?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: I release updates regularly when Microsoft pushes new Windows builds or when I find new useful tweaks. Check the <a href="blog.html" style="color: var(--link-color);">Blog</a> for changelogs.</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: Can I use TrixOS on Windows 10 LTSC?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: Can I use TrixOS on Windows 10 LTSC?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: Yes, but some tweaks may not work on LTSC versions. The tool will skip unsupported tweaks automatically.</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: What if something breaks?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: What if something breaks?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: TrixOS creates a System Restore Point before any changes. If something goes wrong, just boot into Safe Mode and restore to that point.</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: Is TrixOS free?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: Is TrixOS free?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: Yes, TrixOS is completely free and open‑source. No hidden payments, no ads, no subscriptions.</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: Can I use TrixOS on multiple computers?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: Can I use TrixOS on multiple computers?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: Yes, you can use it on as many computers as you want. There are no license restrictions.</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: Do I need to install anything else to run TrixOS?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: Do I need to install anything else to run TrixOS?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: No, TrixOS is a standalone tool. Just download and run the executable. No additional software or dependencies required.</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: Can I suggest a new tweak?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: Can I suggest a new tweak?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: Absolutely! Open an issue on <a href="https://github.com/trix7821/TrixOS/issues" target="_blank" style="color: var(--link-color);">GitHub</a> or message us on <a href="https://t.me/trix7821" target="_blank" style="color: var(--link-color);">Telegram</a>. We're always open to new ideas.</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: Does TrixOS work with other optimization tools?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: Does TrixOS work with other optimization tools?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: It's generally safe to use alongside other tools, but we recommend not applying duplicate tweaks to avoid conflicts.</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: Can I run TrixOS from a USB drive?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: Can I run TrixOS from a USB drive?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: Yes, the Cloud and CLI versions are portable. Just copy the executable to a USB drive and run it anywhere.</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: Will TrixOS slow down my PC?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: Will TrixOS slow down my PC?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: No, quite the opposite. TrixOS removes unnecessary services and processes, which frees up system resources and improves performance.</p>
                 </details>
-                <details style="background: var(--card-bg); padding: 16px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
-                    <summary style="font-weight: 600; color: var(--text-color);">Q: How can I support the project?</summary>
+                <details style="background: var(--bg-secondary); padding: 14px 20px; border-radius: 10px; border: 1px solid var(--border-color); cursor: pointer;">
+                    <summary style="font-weight: 600; color: var(--text-primary);">Q: How can I support the project?</summary>
                     <p style="margin-top: 10px; color: var(--text-secondary);">A: You can <a href="https://www.donationalerts.com/r/21trix" target="_blank" style="color: var(--link-color);">donate</a>, spread the word, write a review, or contribute code on <a href="https://github.com/trix7821/TrixOS" target="_blank" style="color: var(--link-color);">GitHub</a>. Every little bit helps!</p>
                 </details>
             </div>
