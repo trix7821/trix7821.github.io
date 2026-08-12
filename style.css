@@ -1,7 +1,4 @@
-/* ============================================
-   TrixOS — Main Stylesheet
-   Purple accent, clean layout
-   ============================================ */
+/* style.css — тёмная тема, адаптив, все секции */
 
 :root {
     --bg-primary: #0d1117;
@@ -10,8 +7,8 @@
     --text-primary: #e6edf3;
     --text-secondary: #8b949e;
     --border-color: #30363d;
-    --link-color: #a855f7;          /* фиолетовый */
-    --link-hover: #7c3aed;          /* тёмно-фиолетовый */
+    --link-color: #a855f7;
+    --link-hover: #7c3aed;
     --btn-primary: #7c3aed;
     --btn-primary-hover: #6d28d9;
     --btn-secondary: #21262d;
@@ -60,7 +57,6 @@ body {
     padding: 20px 0;
 }
 
-/* ---------- Header ---------- */
 header {
     border-bottom: 1px solid var(--border-color);
     padding: 18px 0;
@@ -141,7 +137,6 @@ nav ul li a:hover {
     background: var(--border-color);
 }
 
-/* ---------- Hero ---------- */
 .hero {
     text-align: center;
     padding: 30px 0 20px;
@@ -171,7 +166,6 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-/* ---------- Buttons ---------- */
 .btn {
     display: inline-block;
     padding: 12px 28px;
@@ -209,7 +203,17 @@ nav ul li a:hover {
     background: #f2994a;
 }
 
-/* ---------- Stats ---------- */
+/* Кнопка скачивания — всегда зелёная */
+.btn-download {
+    background: #238636;
+    color: #fff;
+    border: none;
+}
+.btn-download:hover {
+    background: #2ea043;
+    color: #fff;
+}
+
 .stats-section {
     text-align: center;
     padding: 24px 20px;
@@ -240,7 +244,6 @@ nav ul li a:hover {
     margin-top: 2px;
 }
 
-/* ---------- Sections ---------- */
 section {
     margin: 40px 0;
 }
@@ -264,7 +267,6 @@ p {
     margin-bottom: 12px;
 }
 
-/* ---------- Screenshots ---------- */
 .screenshots-section {
     text-align: center;
 }
@@ -298,7 +300,6 @@ p {
     margin: 0;
 }
 
-/* ---------- Features ---------- */
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -328,7 +329,6 @@ p {
     margin-bottom: 0;
 }
 
-/* ---------- Safety ---------- */
 .safety-box {
     background: var(--bg-secondary);
     padding: 22px 28px;
@@ -341,13 +341,11 @@ p {
     margin-bottom: 6px;
 }
 
-/* ---------- Support ---------- */
 .support-section {
     text-align: center;
     padding: 20px 0;
 }
 
-/* ---------- Join ---------- */
 .join-section {
     margin: 40px 0 30px;
 }
@@ -397,7 +395,6 @@ p {
     color: var(--text-primary);
 }
 
-/* ---------- Footer ---------- */
 footer {
     border-top: 1px solid var(--border-color);
     margin-top: 40px;
@@ -414,7 +411,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* ---------- Review Form ---------- */
 .review-form {
     max-width: 600px;
     margin: 0 auto;
@@ -454,7 +450,6 @@ footer a:hover {
     width: 100%;
 }
 
-/* ---------- Blog Posts ---------- */
 .post-item {
     background: var(--bg-secondary);
     padding: 18px 22px;
@@ -489,7 +484,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* ---------- FAQ ---------- */
 details {
     background: var(--bg-secondary);
     padding: 14px 20px;
@@ -511,7 +505,6 @@ details p {
     padding-left: 4px;
 }
 
-/* ---------- Team ---------- */
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -595,7 +588,6 @@ details p {
     text-decoration: underline;
 }
 
-/* ---------- Guides ---------- */
 .guide-step {
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
@@ -648,7 +640,6 @@ details p {
     border: 1px solid var(--border-color);
 }
 
-/* ---------- 404 ---------- */
 .error-container {
     text-align: center;
     padding: 80px 20px;
@@ -671,7 +662,6 @@ details p {
     margin-bottom: 30px;
 }
 
-/* ---------- Заголовки страниц (кроме hero) ---------- */
 h1 {
     background: linear-gradient(135deg, #a855f7, #58a6ff);
     -webkit-background-clip: text;
@@ -679,7 +669,6 @@ h1 {
     background-clip: text;
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
