@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built TrixOS and Why — TrixOS Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">TrixOS</span>
+                        <span class="logo-beta">Beta</span>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                        <li><button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">☀️</button></li>
+                        <li><a href="https://t.me/TrixOS_Support_bot" target="_blank">📱</a></li>
+                        <li><a href="https://www.youtube.com/@trixos7821" target="_blank">📺</a></li>
+                        <li><a href="https://www.twitch.tv/trix7821" target="_blank">🎮</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h1>How I Built TrixOS and Why I Made It Free</h1>
+            <p><span style="color:#888;">August 12, 2026</span></p>
+
+            <p>I’m not a professional developer. I’m just a guy who got tired of reinstalling Windows and spending an hour disabling telemetry, deleting Candy Crush, and tweaking registry settings every single time.</p>
+
+            <p>One day I thought: why not automate this? So I wrote a small PowerShell script that did everything for me. It worked. I used it, my friends used it, and they said: “Make it look like a normal program.”</p>
+
+            <p>That’s how TrixOS started.</p>
+
+            <p>At first, it was just a simple form with checkboxes. Then I added more tweaks. Then I realized not everyone wants a GUI — some people prefer command line. So I split it into three versions: GUI, Cloud, and CLI. Each one does the same thing, just in a different way.</p>
+
+            <p>The hardest part wasn’t the code. It was making sure nothing breaks. Every tweak changes something in the registry or system settings. If you mess up, you can kill Windows. So I added a system restore point before every change. If something goes wrong — just roll back and try again.</p>
+
+            <p>Of course, I didn’t do everything perfectly. The installer has a bug that I’m fixing right now. v1.0.3 is on the way. That’s how it goes — you release, people test, you fix, repeat.</p>
+
+            <p>Why open-source? Simple: I want people to trust me. If you can read the code, you know there’s no spyware or hidden garbage. Also, I want help. If someone has a good idea or finds a bug, they can contribute. It’s a community thing.</p>
+
+            <p>And yes, it’s free. Completely free. No ads, no subscriptions, no premium plans hidden behind a paywall.</p>
+
+            <p>But here’s the truth: I want to turn this into something bigger. Once TrixOS has a solid user base — let’s say a few hundred people who actually use it and leave feedback — I plan to launch a Pro version with extra features. The free version will stay free forever. The Pro version will be for those who want more.</p>
+
+            <p>So if you’re reading this and you tried TrixOS — thank you. Seriously. Every download, every comment, every bug report helps me make it better.</p>
+
+            <p>If you want to help:</p>
+            <ul>
+                <li>Download it from the <a href="download.html">download page</a></li>
+                <li>Leave a <a href="reviews.html">review</a></li>
+                <li>Report a bug on <a href="https://github.com/trix7821/TrixOS/issues" target="_blank">GitHub</a></li>
+                <li>Join the team — <a href="apply.html">apply here</a></li>
+            </ul>
+
+            <p>I built TrixOS because I needed it. But now I’m building it because other people need it too.</p>
+
+            <p>That’s the whole story.</p>
+
+            <p style="margin-top: 30px;"><a href="blog.html">← Back to blog</a></p>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 TrixOS. Open source. MIT License.</p>
+            <p style="margin-top:5px; font-size:13px;">
+                📧 <a href="mailto:trixos7821@gmail.com" style="color: var(--link-color); text-decoration:none;">trixos7821@gmail.com</a>
+            </p>
+            <div style="margin-top: 15px;">
+                <a href="https://t.me/TrixOS_Support_bot" target="_blank" class="btn btn-secondary" style="background: #1f8ef1; color: #fff; border: none; padding: 10px 24px; text-decoration: none; display: inline-block; border-radius: 8px; font-weight: 600;">📱 Contact Support</a>
+            </div>
+            <div style="margin-top: 10px;">
+                <a href="https://t.me/TrixOS_Support_bot" target="_blank" style="color: var(--link-color); text-decoration: none; margin: 0 10px;">📱 Support Bot</a>
+                <a href="https://www.youtube.com/@trixos7821" target="_blank" style="color: var(--link-color); text-decoration: none; margin: 0 10px;">📺 YouTube</a>
+                <a href="https://www.twitch.tv/trix7821" target="_blank" style="color: var(--link-color); text-decoration: none; margin: 0 10px;">🎮 Twitch</a>
+            </div>
+        </footer>
+    </div>
+    <script src="theme.js"></script>
+</body>
+</html>
