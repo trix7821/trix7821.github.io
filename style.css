@@ -7,10 +7,10 @@
     --text-primary: #e6edf3;
     --text-secondary: #8b949e;
     --border-color: #30363d;
-    --link-color: #a855f7;
-    --link-hover: #7c3aed;
-    --btn-primary: #7c3aed;
-    --btn-primary-hover: #6d28d9;
+    --link-color: #2563eb;
+    --link-hover: #1d4ed8;
+    --btn-primary: #2563eb;
+    --btn-primary-hover: #1d4ed8;
     --btn-secondary: #21262d;
     --btn-secondary-hover: #30363d;
     --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -23,10 +23,10 @@
     --text-primary: #1f2328;
     --text-secondary: #656d76;
     --border-color: #d0d7de;
-    --link-color: #a855f7;
-    --link-hover: #7c3aed;
-    --btn-primary: #7c3aed;
-    --btn-primary-hover: #6d28d9;
+    --link-color: #2563eb;
+    --link-hover: #1d4ed8;
+    --btn-primary: #2563eb;
+    --btn-primary-hover: #1d4ed8;
     --btn-secondary: #f6f8fa;
     --btn-secondary-hover: #eaeef2;
     --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
@@ -146,7 +146,7 @@ nav ul li a:hover {
     font-size: 38px;
     font-weight: 800;
     margin-bottom: 12px;
-    background: linear-gradient(135deg, #58a6ff, #1f6feb);
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -203,7 +203,6 @@ nav ul li a:hover {
     background: #f2994a;
 }
 
-/* Кнопка скачивания — всегда зелёная */
 .btn-download {
     background: #238636;
     color: #fff;
@@ -212,36 +211,6 @@ nav ul li a:hover {
 .btn-download:hover {
     background: #2ea043;
     color: #fff;
-}
-
-.stats-section {
-    text-align: center;
-    padding: 24px 20px;
-    margin: 20px 0;
-    background: var(--bg-secondary);
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-}
-.stats-grid {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-.stat-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.stat-number {
-    font-size: 34px;
-    font-weight: 800;
-    color: #238636; /* всегда зелёный */
-}
-.stat-label {
-    font-size: 14px;
-    color: var(--text-secondary);
-    margin-top: 2px;
 }
 
 section {
@@ -333,7 +302,7 @@ p {
     background: var(--bg-secondary);
     padding: 22px 28px;
     border-radius: 10px;
-    border-left: 4px solid #7c3aed;
+    border-left: 4px solid #2563eb;
 }
 .safety-icon {
     font-size: 26px;
@@ -663,7 +632,7 @@ details p {
 }
 
 h1 {
-    background: linear-gradient(135deg, #a855f7, #58a6ff);
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
