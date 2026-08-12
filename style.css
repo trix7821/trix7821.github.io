@@ -26,7 +26,6 @@
     --text-primary: #1f2328;
     --text-secondary: #656d76;
     --border-color: #d0d7de;
-    /* link-color остаётся тем же фиолетовым */
     --link-color: #a855f7;
     --link-hover: #7c3aed;
     --btn-primary: #7c3aed;
@@ -96,7 +95,7 @@ header {
 .logo-text {
     font-size: 26px;
     font-weight: 700;
-    color: var(--text-primary);  /* остаётся белым/чёрным */
+    color: var(--text-primary);
 }
 
 .logo-beta {
