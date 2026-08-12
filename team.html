@@ -6,22 +6,93 @@
     <title>Team — TrixOS</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px; }
-        .team-card { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); padding: 20px 22px; cursor: pointer; transition: border-color 0.2s, box-shadow 0.2s; }
-        .team-card:hover { border-color: var(--link-color); box-shadow: 0 4px 20px rgba(88,166,255,0.05); }
-        .team-card-header { display: flex; align-items: center; gap: 14px; }
-        .team-avatar { font-size: 42px; line-height: 1; }
-        .team-name { font-size: 20px; font-weight: 700; margin: 0; color: var(--text-color); }
-        .team-role { font-size: 14px; color: var(--link-color); margin: 0; }
-        .team-toggle { margin-left: auto; font-size: 20px; color: var(--text-secondary); transition: transform 0.3s ease; user-select: none; }
-        .team-toggle.open { transform: rotate(180deg); }
-        .team-details { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s ease; padding-top: 0; }
-        .team-details.open { max-height: 700px; padding-top: 16px; }
-        .team-details-inner { border-top: 1px solid var(--border-color); padding-top: 14px; display: flex; flex-direction: column; gap: 6px; }
-        .team-details-inner p { margin: 0; font-size: 14px; color: var(--text-secondary); display: flex; align-items: baseline; gap: 8px; }
-        .team-details-inner .label { font-weight: 600; color: var(--text-color); min-width: 100px; }
-        .team-details-inner a { color: var(--link-color); text-decoration: none; }
-        @media (max-width: 600px) { .team-grid { grid-template-columns: 1fr; } .team-details-inner p { flex-direction: column; gap: 2px; } .team-details-inner .label { min-width: unset; } }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 24px;
+        }
+        .team-card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            padding: 18px 20px;
+            cursor: pointer;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .team-card:hover {
+            border-color: var(--link-color);
+            box-shadow: var(--card-shadow);
+        }
+        .team-card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .team-avatar {
+            font-size: 38px;
+            line-height: 1;
+        }
+        .team-name {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0;
+        }
+        .team-role {
+            font-size: 14px;
+            color: var(--link-color);
+            margin: 0;
+        }
+        .team-toggle {
+            margin-left: auto;
+            font-size: 18px;
+            color: var(--text-secondary);
+            transition: transform 0.3s;
+            user-select: none;
+        }
+        .team-toggle.open {
+            transform: rotate(180deg);
+        }
+        .team-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+            padding-top: 0;
+        }
+        .team-details.open {
+            max-height: 600px;
+            padding-top: 14px;
+        }
+        .team-details-inner {
+            border-top: 1px solid var(--border-color);
+            padding-top: 12px;
+        }
+        .team-details-inner p {
+            margin: 4px 0;
+            font-size: 14px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+        .team-details-inner .label {
+            font-weight: 600;
+            color: var(--text-primary);
+            min-width: 100px;
+        }
+        .team-details-inner a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        .team-details-inner a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .team-grid { grid-template-columns: 1fr; }
+            .team-details-inner p { flex-direction: column; gap: 2px; }
+            .team-details-inner .label { min-width: unset; }
+        }
     </style>
 </head>
 <body>
@@ -29,10 +100,10 @@
         <header>
             <div class="header-content">
                 <div class="logo">
-                    <a href="index.html" style="display: flex; align-items: center; gap: 8px; text-decoration: none;">
+                    <a href="index.html">
                         <span class="logo-icon">⚡</span>
-                        <span style="font-size: 28px; font-weight: 700; color: var(--text-color);">TrixOS</span>
-                        <span style="font-size: 16px; font-weight: 400; color: var(--text-secondary);">Beta</span>
+                        <span class="logo-text">TrixOS</span>
+                        <span class="logo-beta">Beta</span>
                     </a>
                 </div>
                 <nav>
@@ -43,8 +114,6 @@
                         <li><a href="support.html">Support</a></li>
                         <li><a href="reviews.html">Reviews</a></li>
                         <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="roadmap.html">Roadmap</a></li>
-                        <li><a href="ideas.html">Ideas</a></li>
                         <li><a href="team.html">Team</a></li>
                         <li><a href="guides.html">Guides</a></li>
                         <li><button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">☀️</button></li>
