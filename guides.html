@@ -11,8 +11,11 @@
         <header>
             <div class="header-content">
                 <div class="logo">
-                    <span class="logo-icon">⚡</span>
-                    <h1><a href="index.html">TrixOS</a></h1>
+                    <a href="index.html">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">TrixOS</span>
+                        <span class="logo-beta">Beta</span>
+                    </a>
                 </div>
                 <nav>
                     <ul>
@@ -22,8 +25,6 @@
                         <li><a href="support.html">Support</a></li>
                         <li><a href="reviews.html">Reviews</a></li>
                         <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="roadmap.html">Roadmap</a></li>
-                        <li><a href="ideas.html">Ideas</a></li>
                         <li><a href="team.html">Team</a></li>
                         <li><a href="guides.html">Guides</a></li>
                         <li><button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">☀️</button></li>
@@ -40,7 +41,8 @@
             <p>Step-by-step instructions to get the most out of TrixOS. Click on each step to expand.</p>
 
             <!-- Гайд 1: Установка -->
-            <h2 style="margin-top: 40px;">📥 How to Install TrixOS</h2>
+            <h2>📥 How to Install TrixOS</h2>
+
             <div class="guide-step" onclick="toggleGuide(this)">
                 <div class="guide-step-header">
                     <span class="step-number">1</span>
@@ -48,17 +50,18 @@
                 </div>
                 <div class="guide-step-content">
                     <p>Go to the <a href="download.html">Download page</a> and click the <strong>Download Installer</strong> button. The file <code>TrixOS_Installer.exe</code> will be saved to your computer.</p>
-                    <img src="gui.png" alt="Download page" style="max-width:100%; border-radius:8px; border:1px solid var(--border-color);">
+                    <img src="step1-download.png" alt="Download installer">
                 </div>
             </div>
 
             <div class="guide-step" onclick="toggleGuide(this)">
                 <div class="guide-step-header">
                     <span class="step-number">2</span>
-                    Run the installer
+                    Run as administrator
                 </div>
                 <div class="guide-step-content">
-                    <p>Double-click the downloaded file. If Windows SmartScreen appears, click <strong>"More info"</strong> and then <strong>"Run anyway"</strong> (TrixOS is open-source and safe).</p>
+                    <p>Right-click the installer and select <strong>"Run as administrator"</strong>. This is required to apply system tweaks.</p>
+                    <img src="step2-runas.png" alt="Run as administrator">
                 </div>
             </div>
 
@@ -68,23 +71,47 @@
                     Choose components
                 </div>
                 <div class="guide-step-content">
-                    <p>Select which components you want to install: <strong>GUI</strong>, <strong>Cloud</strong>, or <strong>CLI</strong>. We recommend installing all three.</p>
+                    <p>Select which components you want to install: <strong>GUI</strong>, <strong>CLI</strong>, or <strong>Cloud</strong>. We recommend installing all three.</p>
+                    <img src="step3-components.png" alt="Select components">
                 </div>
             </div>
 
             <div class="guide-step" onclick="toggleGuide(this)">
-                <div class="step-number" style="background: var(--link-color); color: #fff; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">4</div>
                 <div class="guide-step-header">
                     <span class="step-number">4</span>
+                    Installation progress
+                </div>
+                <div class="guide-step-content">
+                    <p>Wait while the installer copies files. The process takes about 30 seconds. You can choose to launch TrixOS immediately after installation.</p>
+                    <img src="step4-progress.png" alt="Installation progress">
+                </div>
+            </div>
+
+            <div class="guide-step" onclick="toggleGuide(this)">
+                <div class="guide-step-header">
+                    <span class="step-number">5</span>
+                    Installed files
+                </div>
+                <div class="guide-step-content">
+                    <p>After installation, you'll find three executables in the installation folder: <code>TrixOS_Gui.exe</code>, <code>TrixOS_CLI.exe</code>, and <code>TrixOS_Cloud.exe</code>.</p>
+                    <img src="step5-files.png" alt="Installed files">
+                </div>
+            </div>
+
+            <div class="guide-step" onclick="toggleGuide(this)">
+                <div class="guide-step-header">
+                    <span class="step-number">6</span>
                     Launch TrixOS
                 </div>
                 <div class="guide-step-content">
-                    <p>After installation, you can launch TrixOS from the Start Menu or desktop shortcut. The first time, the app will check for updates and show you the main dashboard.</p>
+                    <p>Double-click <code>TrixOS_Gui.exe</code> to launch the graphical interface. You can also run CLI or Cloud versions from the same folder.</p>
+                    <img src="step6-launch.png" alt="Launch TrixOS">
                 </div>
             </div>
 
             <!-- Гайд 2: Применение твиков -->
-            <h2 style="margin-top: 40px;">⚡ How to Apply Tweaks</h2>
+            <h2>⚡ How to Apply Tweaks</h2>
+
             <div class="guide-step" onclick="toggleGuide(this)">
                 <div class="guide-step-header">
                     <span class="step-number">1</span>
@@ -92,7 +119,7 @@
                 </div>
                 <div class="guide-step-content">
                     <p>In the main window, click on the <strong>"Tweaks"</strong> tab. You'll see a list of all available tweaks grouped by category.</p>
-                    <img src="tweaks.png" alt="Tweaks tab" style="max-width:100%; border-radius:8px; border:1px solid var(--border-color);">
+                    <img src="tweaks.png" alt="Tweaks tab">
                 </div>
             </div>
 
@@ -117,7 +144,7 @@
             </div>
 
             <p style="color: var(--text-secondary); font-size: 14px; margin-top: 30px;">
-                📸 More screenshots and detailed guides coming soon. If you need help, <a href="mailto:trixos7821@gmail.com" style="color: var(--link-color);">email us</a> or <a href="https://t.me/trix7821" style="color: var(--link-color);">write on Telegram</a>.
+                📸 More guides coming soon. If you need help, <a href="mailto:trixos7821@gmail.com" style="color: var(--link-color);">email us</a> or <a href="https://t.me/trix7821" style="color: var(--link-color);">write on Telegram</a>.
             </p>
         </main>
 
@@ -144,7 +171,6 @@
             if (content.classList.contains('open')) {
                 content.classList.remove('open');
             } else {
-                // закрыть все остальные
                 document.querySelectorAll('.guide-step-content.open').forEach(c => c.classList.remove('open'));
                 content.classList.add('open');
             }
